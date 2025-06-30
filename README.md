@@ -107,3 +107,6 @@ Make sure you have these installed:
 Method	Endpoint	Description
 
 GET	/api/hello	Returns { msg: "Hello from Node API!" }
+
+## Refer this for the GPT instructions
+   https://drive.google.com/drive/folders/1maE2DE2tZbm9Q8xzjMA1UgeQYP9K5SvB?usp=sharing
