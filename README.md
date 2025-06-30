@@ -105,4 +105,5 @@ Make sure you have these installed:
    ```
 ## 🌐 API Endpoints
 Method	Endpoint	Description
+
 GET	/api/hello	Returns { msg: "Hello from Node API!" }
