@@ -53,3 +53,11 @@ Make sure you have these installed:
    ```bash
    git clone <your-repo-url>.git
    cd my-project
+
+2. Install dependencies:
+   ```bash
+   cd backend
+   npm install
+
+   cd ../frontend
+   npm install
