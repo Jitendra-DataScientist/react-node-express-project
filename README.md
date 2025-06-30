@@ -53,3 +53,57 @@ Make sure you have these installed:
    ```bash
    git clone <your-repo-url>.git
    cd my-project
+
+2. Install dependencies:
+   ```bash
+   cd backend
+   npm install
+
+   cd ../frontend
+   npm install
+
+## 🚀 Usage
+
+   1. Start Backend
+   ```bash
+   cd backend
+   npm run dev  # or npm start
+   ```
+   Starts the server on http://localhost:8001:
+   ```bash
+   GET /api/hello
+   Response: { "msg": "Hello from Node API!" }
+   ```
+
+   2. Start Frontend
+   ```bash
+   cd frontend
+   npm start
+   ```
+   Serves React at http://localhost:8000. It proxies /api/* to the backend.
+
+   3. Access App
+   Open in browser: http://<server-ip>:8000/
+   React frontend will fetch and display the backend message.
+
+## 📂 Project Structure
+   ```pgsql
+   my-project/
+   ├─ backend/            ← Node.js API
+   │   ├─ server.js       ← Express server (manual)
+   │   ├─ package.json    ← auto via npm init
+   │   └─ node_modules/   ← auto via npm install
+   │
+   ├─ frontend/           ← React UI
+   │   ├─ .env            ← sets PORT=8000 (manual)
+   │   ├─ src/App.js      ← entry point, displays API data (manual updates)
+   │   ├─ package.json    ← auto via create-react-app
+   │   ├─ public/         ← CRA-generated files
+   │   └─ node_modules/   ← auto via npm install
+   │
+   └─ .gitignore          ← root-level (manual)
+   ```
+## 🌐 API Endpoints
+Method	Endpoint	Description
+
+GET	/api/hello	Returns { msg: "Hello from Node API!" }
